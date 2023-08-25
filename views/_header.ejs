@@ -1,0 +1,25 @@
+<!-- heading section -->
+<nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <h2 class="navbar-brand" class="d-inline-block align-text-top">
+            Nodejs Authentication
+        </h2>
+        <!-- button div -->
+        <div class=" button-div">
+            <!-- for Signup/homepage -->
+            <% if(title == 'home page'){%>
+                <button type="submit" class="btn btn-success"><a href="/sign-in">Sign In</a></button>
+            <%}%>
+            <!-- for Signin page -->
+            <% if(title=='sign-in page'){%>
+                <button type="submit" class="btn btn-success"><a href="/">Home</a></button>
+            <%}%>
+            <!-- for profile/reset page -->
+            <% if(locals.user){%>
+                <button type="submit" class="btn btn-success"><a href="/reset/<%=user.id%>">Reset Password</a></button>
+                <button type="submit" class="btn btn-success" ><a href="/sign-out">Sign Out</a></button>   
+            <%}%>
+        </div>
+    </div>
+</nav>
+    

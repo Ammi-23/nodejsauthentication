@@ -1,0 +1,31 @@
+<!-- css style link for Sign-in page-->
+<link rel="stylesheet" href="/css/signIn.css">
+<h1> Sign In</h1>
+
+<form action="/create-session" method="post" class="form-div">
+    <!-- form for sign in using email and password -->
+    <div class="container">
+        <div class="input-div">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-div">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+        <!-- to go back to sign up page -->
+        <div class="ref-text">
+            <p>Don't have an account? <a href="/">Signup</a></p>
+        </div>
+        <div class="option">
+            <span>__________________</span>
+            <span >Or</span>
+            <span>__________________</span>
+        </div>
+        <!--for Google Sign up -->
+        <botton type="submit" class="btn btn-success" >
+            <a href="/auth/google" style="text-decoration: none; color: white;">Google Sign-In</a>
+        </botton>
+    </div>
+</form>

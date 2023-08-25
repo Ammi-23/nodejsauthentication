@@ -1,0 +1,39 @@
+<!-- css style link for home/Sign-up page-->
+<link rel="stylesheet" href="/css/home.css">
+
+<h1> Sign Up</h1>
+<form action="/sign-up" method="post" class="form-div">
+    <!-- form to create new user with name email and password -->
+    <div class="container">
+        <div class="input-div">
+            <label for="email">Name: </label>
+            <input type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="input-div">
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="input-div">
+            <label for="email">Password: </label>
+            <input type="password" name="password" placeholder="password" required>
+        </div>
+        <div class="input-div">
+            <label for="email">Confirm<br>Password:</br></label>
+            <input type="password" name="confirm_password" placeholder="confirm password" required>
+        </div>
+        <button type="submit"  class="btn btn-primary">Sign up</button>
+        <div class="ref-text">
+            <!-- for user sign-in -->
+            <p>Already have an account?<a href="/sign-in">Sign In</a></p>
+        </div>
+        <div class="option">
+            <span>__________________</span>
+            <span >Or</span>
+            <span>__________________</span>
+        </div>
+        <!--for Google Sign up -->
+        <botton type="submit" class="btn btn-success" >
+            <a href="/auth/google" style="text-decoration: none; color: white;">Google Sign-In</a>
+        </botton>
+    </div>
+</form>

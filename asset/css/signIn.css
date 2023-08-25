@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body section */
+body{
+    background-color:black;
+}
+
+.form-div{
+    height: 28rem;
+    display: flex;
+    align-items: center;
+}
+/* heading */
+h1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5vh;
+    color: darkred;
+}
+/* form box styling */
+.container{
+    height: 20rem;
+    width: 30rem;
+    border: 2px solid wheat;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+/* for input fields */
+.input-div{
+    height:2.3rem;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+input{
+    height:2rem;
+    font-size: 1rem;
+    width: 22vw;
+    border: 1px solid darkred;
+}
+
+p{
+    color: whitesmoke;
+}
+
+.option{
+    color: lightslategray;
+    height:1.3rem;
+}
+
+.ref-text{
+    height: 1.3rem;
+}
