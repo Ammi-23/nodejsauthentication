@@ -1,8 +1,7 @@
-require('dotenv').config(); // to use env variables
+
 const express= require('express');
 const cookieParser= require('cookie-parser');
 const expressLayouts= require('express-ejs-layouts');
-const bcrypt= require('bcrypt');
 const db=require('./config/mongoose'); // for database
 const port=5500; //declaring port for the application
 const app= express();
@@ -36,14 +35,14 @@ app.set('layout extractScripts',true);
 // Initialize and configure express session as middle ware to save sessions
 app.use(session({
     name:'profile',
-    secret: process.env.secret_key,
+    secret: 'black',
     saveUninitialized:false,
     resave:false,
     cookie:{
         maxAge:(1000 * 60 * 100)
     },
     store: MongoStore.create({
-        mongoUrl: process.env.mongoDB_URL,
+        mongoUrl: 'mongodb+srv://ammi:Lock&key23@nodejs-authentication.kcpqqpo.mongodb.net/?retryWrites=true&w=majority',
         autoRemove:'disabled'
     },
     function(err){

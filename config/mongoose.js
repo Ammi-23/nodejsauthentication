@@ -1,7 +1,7 @@
 //require the library
 const mongoose= require('mongoose');
 //connect to the database
-mongoose.connect(process.env.mongoDB_URL);
+mongoose.connect('mongodb+srv://ammi:Lock&key23@nodejs-authentication.kcpqqpo.mongodb.net/?retryWrites=true&w=majority');
 const db = mongoose.connection;
 
 //if error in connecting db
